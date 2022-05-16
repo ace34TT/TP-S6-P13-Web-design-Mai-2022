@@ -1,7 +1,12 @@
 <?php $title = "Earth"; ?>
 <!-- HEADER -->
 <?php ob_start(); ?>
-
+<style>
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+</style>
 <?php $links = ob_get_clean(); ?>
 <!-- CONTENT -->
 <?php ob_start(); ?>
@@ -12,7 +17,9 @@
 </p>
 <!-- ========== End definition ========== -->
 <!-- ========== Start causes ========== -->
+
 <h1>Quels sont les cause de la rechauffement climatique ?</h1>
+<img class="responsive" src="<?= base_url() ?>/assets/frontoffice/images/marek-piwnicki-WiZOyYqzUss-unsplash.jpg" alt="">
 <p>
     Jusqu'à présent, l'une des principales causes du changement climatique est notre combustion de combustibles fossiles (charbon, gaz naturel et pétrole), qui augmente la concentration de gaz à effet de serre tels que le dioxyde de carbone dans l'atmosphère. Combiné à d'autres activités, telles que le défrichement des terres pour l'agriculture, cela a provoqué une augmentation de la température moyenne de notre planète. Pour les scientifiques, le lien entre les gaz à effet de serre et le réchauffement climatique est aussi certain que le lien entre le tabagisme et le cancer du poumon.
 </p>

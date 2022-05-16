@@ -1,6 +1,11 @@
 <?php $title = ""; ?>
 <!-- HEADER -->
 <?php ob_start(); ?>
+<style>
+    .table-tr:hover {
+        cursor: pointer;
+    }
+</style>
 
 <?php $links = ob_get_clean(); ?>
 <!-- CONTENT -->
@@ -63,4 +68,4 @@
     });
 </script>
 <?php $scripts = ob_get_clean(); ?>
-<?php require('template.php'); ?>
+<?php require($target_file = APPPATH . 'Views/backoffice/template.php'); ?>

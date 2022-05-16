@@ -10,7 +10,6 @@
     <?=
     $new["content"]
     ?>
-
 </article>
 <?php $content = ob_get_clean(); ?>
 <!-- SCRIPT -->

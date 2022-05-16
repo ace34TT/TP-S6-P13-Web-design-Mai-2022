@@ -47,7 +47,7 @@
                 <!-- nav bar -->
                 <div class="w-100 mb-4 d-flex">
                     <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
-                        CSCS MADA
+                        Earth-Admin
                     </a>
                 </div>
                 <ul class="navbar-nav flex-fill w-100 mb-2">
@@ -62,7 +62,6 @@
                     <span>Contents</span>
                 </p>
                 <ul class="navbar-nav flex-fill w-100 mb-2">
-
                     <li class="nav-item dropdown">
                         <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                             <i class="fe fe-user fe-16"></i>
@@ -70,7 +69,11 @@
                         </a>
                         <ul class="collapse list-unstyled pl-4 w-100" id="ui-elements">
                             <li class="nav-item">
-                                <a class="nav-link pl-3" href="<?= route_to('admin.manage.news') ?>"><span class="ml-1 item-text">Pending</span>
+                                <a class="nav-link pl-3" href="<?= route_to('admin.news.all') ?>"><span class="ml-1 item-text">All</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="<?= route_to('admin.news.insert.form') ?>"><span class="ml-1 item-text">Insert</span>
                                 </a>
                             </li>
                         </ul>

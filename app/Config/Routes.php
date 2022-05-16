@@ -56,11 +56,19 @@ $routes->group('admin', function ($routes) {
     $routes->add('dashboard', function () {
         return view("backoffice/homepage");
     }, ['as' => 'admin.dashboard']);
-    $routes->add('news', function () {
-        $newModel = new NewModel();
-        $data["news"] = $newModel->findAll();
-        return view("backoffice/news", $data);
-    }, ['as' => 'admin.manage.news']);
+
+    $routes->group('news', function ($routes) {
+        $routes->add('all', function () {
+            $newModel = new NewModel();
+            $data["news"] = $newModel->findAll();
+            return view("backoffice/news/all", $data);
+        }, ['as' => 'admin.news.all']);
+        $routes->add('all', function () {
+            $newModel = new NewModel();
+            $data["news"] = $newModel->findAll();
+            return view("backoffice/news/all", $data);
+        }, ['as' => 'admin.news.insert.form']);
+    });
 });
 
 function _exampleOutput($output = null)
