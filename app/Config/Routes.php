@@ -66,6 +66,7 @@ $routes->group('admin', function ($routes) {
         $routes->add('insert-form-get', function () {
             return view("backoffice/news/insert-form");
         }, ['as' => 'admin.news.insert.get']);
+
         $routes->add('insert-form-post', "NewController::insert", ['as' => 'admin.news.insert.post']);
     });
 });
