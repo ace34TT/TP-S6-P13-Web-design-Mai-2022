@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Models\NewModel;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -33,8 +35,22 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->add('/', function () {
-    return view("frontoffice/index");
+    $newModel = new NewModel();
+    $data["news"] = $newModel->orderby("created_at", "desc")->findAll();
+    return view("frontoffice/index", $data);
 });
+$routes->add('/news/(:any)/(:any)', function ($id, $title) {
+    $newModel = new NewModel();
+    $data["new"] = $newModel->find($id);
+    return view("frontoffice/new", $data);
+}, ["as" => "new.details"]);
+
+$routes->group('admin', function ($routes) {
+    $routes->add('login-form', function () {
+        return view("backoffice/index");
+    }, ['as' => 'admin.login']);
+});
+
 
 /*
  * --------------------------------------------------------------------
