@@ -3,6 +3,7 @@
 namespace Config;
 
 use App\Models\NewModel;
+use App\Libraries\GroceryCrud;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -49,8 +50,23 @@ $routes->group('admin', function ($routes) {
     $routes->add('login-form', function () {
         return view("backoffice/index");
     }, ['as' => 'admin.login']);
+    $routes->post('login-process', function () {
+        return redirect()->route('admin.dashboard');
+    }, ['as' => 'admin.login.process']);
+    $routes->add('dashboard', function () {
+        return view("backoffice/homepage");
+    }, ['as' => 'admin.dashboard']);
+    $routes->add('news', function () {
+        $newModel = new NewModel();
+        $data["news"] = $newModel->findAll();
+        return view("backoffice/news", $data);
+    }, ['as' => 'admin.manage.news']);
 });
 
+function _exampleOutput($output = null)
+{
+    return view('example', (array)$output);
+}
 
 /*
  * --------------------------------------------------------------------
