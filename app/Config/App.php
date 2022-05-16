@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://earth.joblinkagency.com/public/';
+    public $baseURL = 'https://earth.joblinkagency.com';
     // public $baseURL = 'http://localhost:8080';
     /**
      * --------------------------------------------------------------------------
