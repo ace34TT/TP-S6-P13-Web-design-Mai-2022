@@ -14,6 +14,31 @@ class NewController extends BaseController
 
     public function insert()
     {
-        $new = new NewModel();
+        if ($this->validate([
+            'r' => [
+                'uploaded[picture]',
+
+                "max_size[picture,5000]",
+            ]
+        ])) {
+            $newModel = new NewModel();
+            $picture_file = $this->request->getFile('picture');
+            $picture = $picture_file->getRandomName();
+            $picture_file->move(FCPATH . 'uploads/images', $picture);
+            $data =  [
+                "title" => $this->request->getVar("title"),
+                "description" => $this->request->getVar("description"),
+                "content" => $this->request->getVar("content"),
+                "image" => $picture,
+                "created_at" => date("Y-m-d")
+            ];
+            $newModel->insert($data);
+        } else {
+            // foreach ($this->validator as $key => $value) {
+            echo '<pre>', var_dump($this->validator->listErrors()), '</pre>';
+            // }
+        }
+
+        return redirect()->route('admin.news.all');
     }
 }

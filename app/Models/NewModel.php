@@ -14,7 +14,7 @@ class NewModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["title", "description", "content", "created_at", "image"];
 
     // Dates
     protected $useTimestamps = false;

@@ -73,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pl-3" href="<?= route_to('admin.news.insert.form') ?>"><span class="ml-1 item-text">Insert</span>
+                                <a class="nav-link pl-3" href="<?= route_to('admin.news.insert.get') ?>"><span class="ml-1 item-text">Insert</span>
                                 </a>
                             </li>
                         </ul>
