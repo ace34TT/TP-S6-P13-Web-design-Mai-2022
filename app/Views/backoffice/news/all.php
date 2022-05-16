@@ -40,10 +40,10 @@
                     foreach ($news as $key => $new) {
                     ?>
                         <tr class="table-tr" onclick="location.href='<?= site_url() . '/admin/candidate/test/' . $new['id'] ?>' ">
-                            <td><?= $new["id"] ?></td>
-                            <td><?= $new["title"] ?></td>
-                            <td><?= $new["description"] ?></td>
-                            <td><?= $new["created_at"] ?></td>
+                            <td class="table-td"><?= $new["id"] ?></td>
+                            <td class="table-td"><?= $new["title"] ?></td>
+                            <td class="table-td"><?= $new["description"] ?></td>
+                            <td class="table-td"><?= $new["created_at"] ?></td>
                         </tr>
                     <?php
                     }
