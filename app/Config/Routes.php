@@ -71,7 +71,7 @@ $routes->group('admin', function ($routes) {
             return view("backoffice/news/all", $data);
         }, ['as' => 'admin.news.all']);
         // delete
-        $routes->add('delete', function ($id) {
+        $routes->add('delete/(:any)', function ($id) {
             $newModel = new NewModel();
             $newModel->delete($id);
             return redirect()->route('admin.news.all');
