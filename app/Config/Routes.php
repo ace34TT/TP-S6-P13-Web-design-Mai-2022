@@ -50,9 +50,11 @@ $routes->group('admin', function ($routes) {
     $routes->add('login-form', function () {
         return view("backoffice/index");
     }, ['as' => 'admin.login']);
+
     $routes->post('login-process', function () {
         return redirect()->route('admin.dashboard');
     }, ['as' => 'admin.login.process']);
+
     $routes->add('dashboard', function () {
         return view("backoffice/homepage");
     }, ['as' => 'admin.dashboard']);
@@ -61,6 +63,7 @@ $routes->group('admin', function ($routes) {
         $routes->add('all', function () {
             $newModel = new NewModel();
             $data["news"] = $newModel->findAll();
+
             return view("backoffice/news/all", $data);
         }, ['as' => 'admin.news.all']);
         $routes->add('insert-form-get', function () {
