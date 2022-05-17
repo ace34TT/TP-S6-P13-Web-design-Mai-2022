@@ -29,7 +29,7 @@ class AdminController extends BaseController
                 return redirect()->route('admin.dashboard');
             } else {
                 $session->setFlashdata('message', 'Password is incorrect.');
-                // return redirect()->route('admin.login');
+                return redirect()->route('admin.login');
             }
         } else {
             $session->setFlashdata('message', 'Email is incorrect');
