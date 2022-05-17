@@ -26,7 +26,7 @@
         <div class="row align-items-center h-100">
             <form method="POST" action="<?= route_to('admin.login.process') ?>" class="col-lg-3 col-md-4 col-10 mx-auto text-center">
                 <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="<?= route_to('homepage') ?>">
-                    <img height="50px" width="50px" src="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png" alt="">
+                    <img height="100px" width="100px" src="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png" alt="">
                 </a>
                 <h1 class="h6 mb-3">Sign in</h1>
                 <div class="form-group">
