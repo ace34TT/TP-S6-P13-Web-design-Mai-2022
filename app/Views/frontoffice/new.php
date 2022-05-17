@@ -6,11 +6,11 @@
 <!-- CONTENT -->
 <?php ob_start(); ?>
 <article class="mb-4">
-    <h1><?= $new["title"] ?></h1>
+    <h1 class="post-title"><?= $new["title"] ?></h1>
     <img width="700px" height="350px" src="<?= base_url() ?>/uploads/images/<?= $new["image"] ?>" alt="">
     <br>
     <br>
-    <h3><?= $new["description"] ?></h3>
+    <h3 class="post-subtitle"><?= $new["description"] ?></h3>
     <br>
     <?=
     $new["content"]
