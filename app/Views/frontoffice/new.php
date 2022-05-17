@@ -10,7 +10,7 @@
     <br>
     <h3><?= $new["description"] ?></h3>
 
-    <img src="<?= base_url() ?>/assets/uploads/ <?= $new["image"] ?>" alt="">
+    <img src="<?= base_url() ?>/assets/uploads/ <?= $new["image"] ?>" alt="pic">
     <?=
     $new["content"]
     ?>
@@ -20,7 +20,7 @@
 <?php ob_start(); ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
-    window.scrollTo(0, 500);
+    window.scrollTo(0, 550);
 </script>
 <?php $scripts = ob_get_clean(); ?>
 <?php require('template.php'); ?>
