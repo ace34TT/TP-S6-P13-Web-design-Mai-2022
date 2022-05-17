@@ -44,7 +44,6 @@ class NewController extends BaseController
                 //delete initial uploaded png image
                 unlink($dir . $image);
             } else {
-
                 echo "error";
             }
 
