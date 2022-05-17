@@ -1,4 +1,4 @@
-<?php $title = ""; ?>
+<?php $title = "Dashboard"; ?>
 <!-- HEADER -->
 <?php ob_start(); ?>
 

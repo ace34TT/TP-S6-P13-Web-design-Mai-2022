@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png">
-    <title></title>
+    <title>Earth-Login</title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="css/simplebar.css">
     <!-- Fonts CSS -->

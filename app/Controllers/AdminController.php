@@ -26,17 +26,13 @@ class AdminController extends BaseController
             if ($authenticatePassword) {
                 $session->set($data[0]);
                 $session->set('isLoggedIn', TRUE);
-                // return redirect()->to(site_url() . '/admin/dashboard');
-
                 return redirect()->route('admin.dashboard');
             } else {
                 $session->setFlashdata('message', 'Password is incorrect.');
-                // return redirect()->to(site_url() . 'admin/login-form');
                 return redirect()->route('admin.login');
             }
         } else {
             $session->setFlashdata('message', 'Email is incorrect');
-            // return redirect()->to(site_url() . 'admin/login-form');
             return redirect()->route('admin.login');
         }
     }

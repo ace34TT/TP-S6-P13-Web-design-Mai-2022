@@ -51,9 +51,7 @@ $routes->group('admin', function ($routes) {
         return view("backoffice/index");
     }, ['as' => 'admin.login']);
 
-    $routes->post('login-process', function () {
-        return redirect()->route('admin.dashboard');
-    }, ['as' => 'admin.login.process']);
+    $routes->post('login-process', "AdminController::login", ['as' => 'admin.login.process']);
 
     $routes->add('dashboard', function () {
         return view("backoffice/homepage");

@@ -1,4 +1,4 @@
-<?php $title = ""; ?>
+<?php $title = "News - List"; ?>
 <!-- HEADER -->
 <?php ob_start(); ?>
 <style>
