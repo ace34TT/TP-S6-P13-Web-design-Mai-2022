@@ -37,11 +37,11 @@
                 <h1 class="h6 mb-3">Sign in</h1>
                 <div class="form-group">
                     <label for="inputEmail" class="sr-only">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control form-control-lg" placeholder="Email address" required="" autofocus="">
+                    <input type="email" value="guest@earth.com" id="inputEmail" class="form-control form-control-lg" placeholder="Email address" required="" autofocus="">
                 </div>
                 <div class="form-group">
                     <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="inputPassword" class="form-control form-control-lg" placeholder="Password" required="">
+                    <input type="password" value="1234" id="inputPassword" class="form-control form-control-lg" placeholder="Password" required="">
                 </div>
                 <div class="checkbox mb-3">
                     <label>
