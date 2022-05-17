@@ -27,6 +27,7 @@ class AdminController extends BaseController
                 $session->set($data[0]);
                 $session->set('isLoggedIn', TRUE);
                 // return redirect()->to(site_url() . '/admin/dashboard');
+
                 return redirect()->route('admin.dashboard');
             } else {
                 $session->setFlashdata('message', 'Password is incorrect.');
