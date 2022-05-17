@@ -10,7 +10,7 @@
     <br>
     <h3><?= $new["description"] ?></h3>
 
-    <img src="<?= base_url() ?>/assets/uploads/ <?= $new["image"] ?>" alt="pic">
+    <img src="<?= base_url() ?>/assets/uploads/<?= $new["image"] ?>" alt="">
     <?=
     $new["content"]
     ?>
