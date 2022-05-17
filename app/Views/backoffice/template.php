@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png">
-    <title></title>
+    <title><?= $title ?></title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/tinidash/css/simplebar.css">
     <!-- Fonts CSS -->
