@@ -19,7 +19,7 @@
 <!-- ========== Start causes ========== -->
 
 <h1>Quels sont les cause de la rechauffement climatique ?</h1>
-<img class="responsive" src="<?= base_url() ?>/assets/frontoffice/images/marek-piwnicki-WiZOyYqzUss-unsplash.webp" alt="">
+<img width="1500px" height="938px" class="responsive" src="<?= base_url() ?>/assets/frontoffice/images/marek-piwnicki-WiZOyYqzUss-unsplash.webp" alt="">
 <p>
     Jusqu'à présent, l'une des principales causes du changement climatique est notre combustion de combustibles fossiles (charbon, gaz naturel et pétrole), qui augmente la concentration de gaz à effet de serre tels que le dioxyde de carbone dans l'atmosphère. Combiné à d'autres activités, telles que le défrichement des terres pour l'agriculture, cela a provoqué une augmentation de la température moyenne de notre planète. Pour les scientifiques, le lien entre les gaz à effet de serre et le réchauffement climatique est aussi certain que le lien entre le tabagisme et le cancer du poumon.
 </p>
