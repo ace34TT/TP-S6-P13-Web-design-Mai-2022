@@ -16,4 +16,4 @@ procedure suivi :
 			conversion des images en webp
 			modification de la taille des images 
 			
-note apres optimisation : 92
+note apres optimisation : 97

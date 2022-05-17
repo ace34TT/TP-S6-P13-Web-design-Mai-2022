@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Qu’est-ce que le réchauffement climatique ? Quelle est sa définition scientifique ? Quelle sont les causes et les conséquences ? Explications pour tout comprendre." />
     <meta name="author" content="Earth" />
+    <meta name="keywords" content="Rechauffement climatique , climat , envirennement ">
     <title><?= $title ?></title>
     <link rel="icon" href="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png">
     <!-- Google fonts-->
