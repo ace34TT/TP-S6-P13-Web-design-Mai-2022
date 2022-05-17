@@ -25,27 +25,6 @@ class NewController extends BaseController
             $picture = $picture_file->getRandomName();
             $picture_file->move(FCPATH . 'uploads/images', $picture);
 
-            //connection to the database, replace with your own credentials
-            $image = $_FILES['product_image']['name'];
-            $file_tmp = $_FILES['product_image']['tmp_name'];
-            //location to save image once uploaded
-            $dir = "images/";
-            //create a new image name
-            $newName = time() . ".webp";
-            //upload image to server
-            if (move_uploaded_file($file_tmp, $dir . $image)) {
-                //Create a png object can either be jpg png or gif
-                $img = imagecreatefrompng($dir . $image);
-                //Quality can be a value between 1-100.
-                $quality = 100;
-                //Create the webp image.
-                imagewebp($img, $dir . $newName, $quality);
-                imagedestroy($img);
-                //delete initial uploaded png image
-                unlink($dir . $image);
-            } else {
-                echo "error";
-            }
             $data =  [
                 "title" => $this->request->getVar("title"),
                 "description" => $this->request->getVar("description"),
