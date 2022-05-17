@@ -11,14 +11,14 @@
 <!-- CONTENT -->
 <?php ob_start(); ?>
 <!-- ========== Start definition ========== -->
-<h1>Qu'est ce que Rechauffement climatique ? </h1>
+<h2>Qu'est ce que Rechauffement climatique ? </h2>
 <p>
     Nous nous référons au réchauffement climatique comme l'augmentation de la température moyenne à la surface de la Terre aux 20e et 21e siècles, mais plus généralement comme le changement résultant des modèles météorologiques à grande échelle. Les deux sont attribuables aux émissions anthropiques de gaz à effet de serre : bien qu'il y ait eu des périodes de changement climatique auparavant, l'activité humaine a eu des précédents pour le système climatique de la Terre depuis le milieu du XXe siècle et a provoqué des changements à l'échelle mondiale.
 </p>
 <!-- ========== End definition ========== -->
 <!-- ========== Start causes ========== -->
 
-<h1>Quels sont les cause de la rechauffement climatique ?</h1>
+<h2>Quels sont les cause de la rechauffement climatique ?</h2>
 <img width="1500px" height="938px" class="responsive" src="<?= base_url() ?>/assets/frontoffice/images/marek-piwnicki-WiZOyYqzUss-unsplash.jpg" alt="">
 <p>
     Jusqu'à présent, l'une des principales causes du changement climatique est notre combustion de combustibles fossiles (charbon, gaz naturel et pétrole), qui augmente la concentration de gaz à effet de serre tels que le dioxyde de carbone dans l'atmosphère. Combiné à d'autres activités, telles que le défrichement des terres pour l'agriculture, cela a provoqué une augmentation de la température moyenne de notre planète. Pour les scientifiques, le lien entre les gaz à effet de serre et le réchauffement climatique est aussi certain que le lien entre le tabagisme et le cancer du poumon.
@@ -31,26 +31,26 @@
 </p>
 <!-- ========== End causes ========== -->
 <!-- ========== Start consequences ========== -->
-<h1>Quels sont les consequences de la rechauffement climatique ?</h1>
+<h2>Quels sont les consequences de la rechauffement climatique ?</h2>
 <ul style="list-style-type: none;">
     <li>
-        <h2> 1 - Conséquences sur l’écosystème et la planète</h2>
+        <h3> 1 - Conséquences sur l’écosystème et la planète</h3>
         <p>Premièrement, l'augmentation de la température causée par le réchauffement climatique affecte l'ensemble de l'écosystème mondial, pas seulement la chaleur ressentie. Le temps est perturbé, les phénomènes météorologiques extrêmes augmentent et les conditions météorologiques habituelles changent. Cela signifie plus de tempêtes, plus d'inondations, plus d'ouragans et de sécheresses.</p>
         <p>La capacité de régulation de l'océan est également affectée par la hausse des températures. Si les températures mondiales augmentent de manière significative, le niveau de la mer augmentera en conséquence et les zones océaniques s'acidifieront et se désoxygéneront. En outre, une trop grande <a href="https://youmatter.world/fr/definition/acidification-des-oceans-definition/">acidification des océans</a> pourrait limiter la capacité des océans du monde à produire de l'oxygène et à stocker du dioxyde de carbone, contribuant ainsi davantage au réchauffement climatique. Mais elle affecte aussi les zones forestières et les écosystèmes fragiles (barrières coralliennes, forêts amazoniennes) et la biodiversité (les coraux, certains insectes et même les mammifères peuvent ne pas survivre).</p>
     </li>
     <li>
-        <h2> 2 - Conséquences sur la société et l’économie</h2>
+        <h3> 2 - Conséquences sur la société et l’économie</h3>
         <p>Sur le plan social et économique, le réchauffement climatique peut avoir plusieurs conséquences : la capacité de la société à s'adapter au nouveau climat, la capacité à adapter les infrastructures, notamment médicales, et les bâtiments. Le réchauffement climatique aura également un impact sur la santé publique, la capacité alimentaire de la nation, et plus encore.</p>
     </li>
     <li>
-        <h2> 3 - Conséquences sur les entreprises</h2>
+        <h3> 3 - Conséquences sur les entreprises</h3>
         <p>Enfin, les entreprises risquent également d’être affectées par le changement et le réchauffement climatique. En effet, dans un contexte où le climat change, il est plus difficile d’adapter ses activités.</p>
     </li>
 </ul>
 <!-- ========== End consequences ========== -->
 
 <!-- ========== Start news ========== -->
-<h1>Articles a lire</h1>
+<h2>Articles a lire</h2>
 <?php
 foreach ($news as $key => $new) {
 ?>
