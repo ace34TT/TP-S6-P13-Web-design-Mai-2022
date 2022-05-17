@@ -24,7 +24,6 @@ class NewController extends BaseController
             $picture_file = $this->request->getFile('picture');
             $picture = $picture_file->getRandomName();
             $picture_file->move(FCPATH . 'uploads/images', $picture);
-
             $data =  [
                 "title" => $this->request->getVar("title"),
                 "description" => $this->request->getVar("description"),
@@ -32,7 +31,7 @@ class NewController extends BaseController
                 "image" => $picture,
                 "created_at" => date("Y-m-d")
             ];
-            $newModel->insert($data);
+            // $newModel->insert($data);
         } else {
             echo '<pre>', var_dump($this->validator->listErrors()), '</pre>';
         }

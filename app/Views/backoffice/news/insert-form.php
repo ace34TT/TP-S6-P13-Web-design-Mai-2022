@@ -26,7 +26,7 @@
                                     <div class="form-row">
                                         <div class="col-12 mb-3">
                                             <label for="validationCustom01">Titre</label>
-                                            <input name="title" type="text" class="form-control" id="validationCustom01" required />
+                                            <input name="title" type="text" class="form-control" id="validationCustom01" />
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@
                                     <div class="form-row">
                                         <div class="col-12 mb-3">
                                             <label for="validationCustom01">Image</label>
-                                            <input type="file" name="picture" class="form-control" id="validationCustom01" required />
+                                            <input type="file" name="picture" class="form-control" id="validationCustom01" />
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                     </div>
