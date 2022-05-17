@@ -41,7 +41,7 @@
                 </div>
                 <div class="form-group">
                     <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" name="pass" value="1234" id="inputPassword" class="form-control form-control-lg" placeholder="Password" required="">
+                    <input type="password" name="password" value="1234" id="inputPassword" class="form-control form-control-lg" placeholder="Password" required="">
                 </div>
                 <div class="checkbox mb-3">
                     <label>
