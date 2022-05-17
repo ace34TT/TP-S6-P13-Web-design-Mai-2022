@@ -48,8 +48,8 @@ $routes->add('/news/(:any)/(:any)', function ($id, $title) {
 
 $routes->group('admin', function ($routes) {
     $routes->add('login-form', function () {
-        echo  password_hash('1234', PASSWORD_DEFAULT);
-        // return view("backoffice/index");
+        // echo  password_hash('1234', PASSWORD_DEFAULT);
+        return view("backoffice/index");
     }, ['as' => 'admin.login']);
     $routes->post('login-process', "AdminController::login", ['as' => 'admin.login.process']);
     $routes->add('dashboard', function () {
