@@ -59,17 +59,24 @@ $routes->group('admin', function ($routes) {
     }, ['as' => 'admin.dashboard']);
 
     $routes->group('news', function ($routes) {
-        $routes->add('all', function () {
-            $newModel = new NewModel();
-            $data["news"] = $newModel->findAll();
-
-            return view("backoffice/news/all", $data);
-        }, ['as' => 'admin.news.all']);
+        // insert
         $routes->add('insert-form-get', function () {
             return view("backoffice/news/insert-form");
         }, ['as' => 'admin.news.insert.get']);
-
         $routes->add('insert-form-post', "NewController::insert", ['as' => 'admin.news.insert.post']);
+        // all
+        $routes->add('all', function () {
+            $newModel = new NewModel();
+            $data["news"] = $newModel->findAll();
+            return view("backoffice/news/all", $data);
+        }, ['as' => 'admin.news.all']);
+        // delete
+        $routes->add('delete', function ($id) {
+            $newModel = new NewModel();
+            $newModel->delete($id);
+            return redirect()->route('admin.news.all');
+        }, ['as' => 'admin.news.delete']);
+        $routes->add('delete', "NewController::delete/$1", ['as' => 'admin.news.delete']);
     });
 });
 

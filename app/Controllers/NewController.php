@@ -46,7 +46,6 @@ class NewController extends BaseController
             } else {
                 echo "error";
             }
-
             $data =  [
                 "title" => $this->request->getVar("title"),
                 "description" => $this->request->getVar("description"),
@@ -56,11 +55,8 @@ class NewController extends BaseController
             ];
             $newModel->insert($data);
         } else {
-            // foreach ($this->validator as $key => $value) {
             echo '<pre>', var_dump($this->validator->listErrors()), '</pre>';
-            // }
         }
-
         return redirect()->route('admin.news.all');
     }
 }

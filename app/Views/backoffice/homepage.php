@@ -5,7 +5,7 @@
 <?php $links = ob_get_clean(); ?>
 <!-- CONTENT -->
 <?php ob_start(); ?>
-
+<?= $new["created_at"] ?>
 <?php $content = ob_get_clean(); ?>
 <!-- SCRIPT -->
 <?php ob_start(); ?>

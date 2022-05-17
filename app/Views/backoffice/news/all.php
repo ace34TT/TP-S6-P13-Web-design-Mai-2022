@@ -33,6 +33,8 @@
                         <th>Title</th>
                         <!-- <th>Description</th> -->
                         <th>Created at</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="data">
@@ -44,6 +46,7 @@
                             <td class="table-td"><?= $new["title"] ?></td>
                             <!-- <td class="table-td"><?= $new["description"] ?></td> -->
                             <td class="table-td"><?= $new["created_at"] ?></td>
+                            <td class="table-td"><a href="<?= route_to('news.delete', $new["id"]) ?>">Delete</a></td>
                         </tr>
                     <?php
                     }
