@@ -6,7 +6,8 @@
 <!-- CONTENT -->
 <?php ob_start(); ?>
 <article class="mb-4">
-    <h1><?= $new["title"] ?></h1>
+    <h3><?= $new["title"] ?></h3>
+    <h4><?= $new["description"] ?></h4>
     <?=
     $new["content"]
     ?>
