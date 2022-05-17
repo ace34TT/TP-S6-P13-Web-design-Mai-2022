@@ -32,7 +32,7 @@ class NewController extends BaseController
                 "image" => $picture,
                 "created_at" => date("Y-m-d")
             ];
-            // $newModel->insert($data);
+            $newModel->insert($data);
         } else {
             echo '<pre>', var_dump($this->validator->listErrors()), '</pre>';
         }
