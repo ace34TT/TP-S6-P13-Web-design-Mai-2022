@@ -41,12 +41,12 @@
                     <?php
                     foreach ($news as $key => $new) {
                     ?>
-                        <tr class="table-tr" onclick="location.href='<?= site_url() . '/admin/candidate/test/' . $new['id'] ?>' ">
+                        <tr class="table-tr" onclick="location.href='<?= '#' ?>' ">
                             <td class="table-td"><?= $new["id"] ?></td>
                             <td class="table-td"><?= $new["title"] ?></td>
                             <!-- <td class="table-td"><?= $new["description"] ?></td> -->
                             <td class="table-td"><?= $new["created_at"] ?></td>
-                            <td class="table-td"><a href="<?= route_to('news.delete', $new["id"]) ?>">Delete</a></td>
+                            <td class="table-td"><a href="<?= route_to('admin.news.delete', $new["id"]) ?>">Delete</a></td>
                         </tr>
                     <?php
                     }
