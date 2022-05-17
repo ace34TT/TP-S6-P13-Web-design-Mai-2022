@@ -6,10 +6,9 @@
 <!-- CONTENT -->
 <?php ob_start(); ?>
 <article class="mb-4">
-    <p></p>
-
     <h1><?= $new["title"] ?></h1>
     <h2><?= $new["description"] ?></h2>
+    <img src="<?= base_url() ?>/assets/uploads/ <?= $new["image"] ?>" alt="">
     <?=
     $new["content"]
     ?>
