@@ -31,7 +31,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Title</th>
-                        <th>Description</th>
+                        <!-- <th>Description</th> -->
                         <th>Created at</th>
                     </tr>
                 </thead>
@@ -42,7 +42,7 @@
                         <tr class="table-tr" onclick="location.href='<?= site_url() . '/admin/candidate/test/' . $new['id'] ?>' ">
                             <td class="table-td"><?= $new["id"] ?></td>
                             <td class="table-td"><?= $new["title"] ?></td>
-                            <td class="table-td"><?= $new["description"] ?></td>
+                            <!-- <td class="table-td"><?= $new["description"] ?></td> -->
                             <td class="table-td"><?= $new["created_at"] ?></td>
                         </tr>
                     <?php
