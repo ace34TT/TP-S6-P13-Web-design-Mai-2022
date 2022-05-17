@@ -23,7 +23,6 @@
                             <div class="card-body">
                                 <form enctype="multipart/form-data" action="<?= route_to('admin.news.insert.post') ?>" method="POST">
                                     <?= csrf_field() ?>
-                                    <?= FCPATH ?>
                                     <div class="form-row">
                                         <div class="col-12 mb-3">
                                             <label for="validationCustom01">Titre</label>
