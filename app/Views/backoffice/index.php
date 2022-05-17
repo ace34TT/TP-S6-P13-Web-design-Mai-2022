@@ -47,6 +47,13 @@
                     <label>
                         <input type="checkbox" value="remember-me"> Stay logged in </label>
                 </div>
+                <?php
+                if (isset($message)) {
+                ?>
+                    <p style="color: #ff9640;">Please , make sure to enter a correct credentials . If you think this is an error , please , contact a responsible .</p>
+                <?php
+                }
+                ?>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Let me in</button>
                 <p class="mt-5 mb-3 text-muted">© 2020</p>
             </form>
