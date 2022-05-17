@@ -23,7 +23,7 @@ class NewController extends BaseController
             $newModel = new NewModel();
             $picture_file = $this->request->getFile('picture');
             $picture = $picture_file->getRandomName();
-            echo FCPATH;
+
             $picture_file->move(FCPATH . 'uploads/images', $picture);
             $data =  [
                 "title" => $this->request->getVar("title"),
