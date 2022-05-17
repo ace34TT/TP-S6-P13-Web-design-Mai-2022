@@ -60,7 +60,7 @@ $routes->group('admin', function ($routes) {
 
     $routes->group('news', function ($routes) {
         // insert
-        $routes->add('insert-form-get', function () {
+        $routes->add('new-form', function () {
             return view("backoffice/news/insert-form");
         }, ['as' => 'admin.news.insert.get']);
         $routes->add('insert-form-post', "NewController::insert", ['as' => 'admin.news.insert.post']);
@@ -76,7 +76,6 @@ $routes->group('admin', function ($routes) {
             $newModel->delete($id);
             return redirect()->route('admin.news.all');
         }, ['as' => 'admin.news.delete']);
-        // $routes->add('delete', "NewController::delete/$1", ['as' => 'admin.news.delete']);
     });
 });
 
