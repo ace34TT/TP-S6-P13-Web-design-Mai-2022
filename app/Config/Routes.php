@@ -39,7 +39,7 @@ $routes->add('/', function () {
     $newModel = new NewModel();
     $data["news"] = $newModel->orderby("created_at", "desc")->findAll();
     return view("frontoffice/index", $data);
-});
+}, ["as" => "homepage"]);
 $routes->add('/news/(:any)/(:any)', function ($id, $title) {
     $newModel = new NewModel();
     $data["new"] = $newModel->find($id);
