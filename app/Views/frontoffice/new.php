@@ -11,6 +11,11 @@
     <br>
     <br>
     <h3 class="post-subtitle"><?= $new["description"] ?></h3>
+    <p class="post-meta">
+        Posted by
+        <a href="#!">Earth</a>
+        on <?= $new["created_at"] ?>
+    </p>
     <br>
     <?=
     $new["content"]
