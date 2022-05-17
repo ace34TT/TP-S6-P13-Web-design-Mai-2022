@@ -19,7 +19,7 @@
 <script>
     jQuery(document).ready(function() {
         jQuery('body,html').animate({
-            scrollTop: 300
+            scrollTop: 700
         }, 800);
     })
 </script>
