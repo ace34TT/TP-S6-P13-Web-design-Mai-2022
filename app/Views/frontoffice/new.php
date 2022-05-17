@@ -11,15 +11,15 @@
     <br>
     <br>
     <h3 class="post-subtitle"><?= $new["description"] ?></h3>
+    <br>
+    <?=
+    $new["content"]
+    ?>
     <p class="post-meta">
         Posted by
         <a href="#!">Earth</a>
         on <?= $new["created_at"] ?>
     </p>
-    <br>
-    <?=
-    $new["content"]
-    ?>
 </article>
 <?php $content = ob_get_clean(); ?>
 <!-- SCRIPT -->
