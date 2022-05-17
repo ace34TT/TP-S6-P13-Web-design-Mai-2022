@@ -48,7 +48,8 @@ $routes->add('/news/(:any)/(:any)', function ($id, $title) {
 
 $routes->group('admin', function ($routes) {
     $routes->add('login-form', function () {
-        return view("backoffice/index");
+        echo  password_hash('1234', PASSWORD_DEFAULT);
+        // return view("backoffice/index");
     }, ['as' => 'admin.login']);
     $routes->post('login-process', "AdminController::login", ['as' => 'admin.login.process']);
     $routes->add('dashboard', function () {
@@ -59,6 +60,7 @@ $routes->group('admin', function ($routes) {
         $routes->add('all', function () {
             $newModel = new NewModel();
             $data["news"] = $newModel->findAll();
+
             return view("backoffice/news/all", $data);
         }, ['as' => 'admin.news.all']);
         $routes->add('insert-form-get', function () {
