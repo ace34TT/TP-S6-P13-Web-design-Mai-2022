@@ -33,7 +33,7 @@ class AdminController extends BaseController
             }
         } else {
             $session->setFlashdata('message', 'Email is incorrect');
-            // return redirect()->route('admin.login');
+            return redirect()->route('admin.login');
         }
     }
 }
