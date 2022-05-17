@@ -58,7 +58,7 @@ foreach ($news as $key => $new) {
     <div class="post-preview">
         <a href="<?= route_to('new.details', $new["id"], preg_replace('/\s+/', '-', $new['title'])) ?>">
             <h2 class="post-title"><?= $new["title"] ?></h2>
-            <h3 class="post-subtitle"> <?= $new["description"] ?>p</h3>
+            <h3 class="post-subtitle"> <?= $new["description"] ?></h3>
         </a>
         <p class="post-meta">
             Posted by
