@@ -9,8 +9,8 @@
     <title><?= $title ?></title>
     <link rel="icon" href="https://i.ibb.co/Y0Tm0tq/Pngtree-earth-cartoon-png-material-5472758.png">
     <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" /> -->
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="<?= base_url() ?>/assets/frontoffice/css/styles.css" rel="stylesheet" />
     <?= $links ?>
