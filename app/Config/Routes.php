@@ -77,7 +77,7 @@ $routes->group('admin', function ($routes) {
             return redirect()->route('admin.news.all');
         }, ['as' => 'admin.news.delete']);
         // $routes->add('delete', "NewController::delete/$1", ['as' => 'admin.news.delete']);
-    }, ['filter' => 'authGuard']);
+    });
 });
 
 function _exampleOutput($output = null)
